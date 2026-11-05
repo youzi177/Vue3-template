@@ -2,6 +2,7 @@
   <div class="text-3xl font-bold underline" ref="target">这是自动路由index</div>
   {{ title }}
   X：{{ x }} Y：{{ y }} 是否在元素外：{{ isOutside }}
+  <HelloWorld></HelloWorld>
 </template>
 
 <script lang="ts" setup>
