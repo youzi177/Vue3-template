@@ -1,7 +1,11 @@
 <template>
-  <div>这是一个基于vue3的模板</div>
+  <div class="main">这是一个基于vue3的模板</div>
 </template>
 
 <script lang="ts" setup></script>
 
-<style></style>
+<style lang="scss">
+.main{
+  color: red;
+}
+</style>
