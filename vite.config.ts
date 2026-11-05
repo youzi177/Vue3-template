@@ -12,6 +12,7 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import Layouts from 'vite-plugin-vue-layouts-next'
 import { VitePWA } from 'vite-plugin-pwa'
+import { viteMockServe } from 'vite-plugin-mock'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -34,7 +35,7 @@ export default defineConfig({
     }),
     Layouts(),
     // 默认是{ registerType: 'prompt' }
-     VitePWA({
+    VitePWA({
       manifest: {
         name: 'Vue3 Temple',
         short_name: 'Vue3 Template',
@@ -53,6 +54,10 @@ export default defineConfig({
           },
         ],
       },
+    }),
+    viteMockServe({
+      mockPath: 'mock',
+      enable: true,
     }),
   ],
   resolve: {

@@ -1,5 +1,6 @@
 allowBuilds:
   '@parcel/watcher': true
   cypress: true
+  esbuild: true
 minimumReleaseAgeExclude:
   - eslint-plugin-cypress@7.0.3
