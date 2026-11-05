@@ -10,6 +10,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import { VueRouterAutoImports } from 'vue-router/unplugin'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import Layouts from 'vite-plugin-vue-layouts-next'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -30,6 +31,7 @@ export default defineConfig({
       collapseSamePrefixes: true, //合并相同前缀
       resolvers: [ElementPlusResolver()],
     }),
+    Layouts()
   ],
   resolve: {
     alias: {
