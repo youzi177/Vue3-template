@@ -1,6 +1,8 @@
 <template>
   <div>
     <RouterView></RouterView>
+    <!-- pwa检测更新组件 -->
+    <ReloadPrompt />
   </div>
 </template>
 
