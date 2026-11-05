@@ -1,3 +1,3 @@
 /// <reference types="vite/client" />
-declare module 'reset-css';
-
+/// <reference types="vue-router/auto" />
+declare module 'reset-css'
