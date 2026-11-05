@@ -1,9 +1,7 @@
-<script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
-
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div>这是一个基于vue3的模板</div>
 </template>
+
+<script lang="ts" setup></script>
+
+<style></style>
