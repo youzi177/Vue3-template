@@ -25,7 +25,7 @@
 </template>
 
 <script lang="ts" setup>
-const title = ref('这是自动路由index')
+const title = ref('这是自动路由!！')
 
 const target = useTemplateRef('target')
 
